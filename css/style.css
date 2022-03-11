@@ -27,7 +27,7 @@ canvas {
   width: 100vw;
   height: 100vh;
   background-image: url("../2.png");
-  background-position: center;
+  background-position: center center;
   /* background-size: 120%, cover; */
   background-size: cover;
   background-repeat: no-repeat;
