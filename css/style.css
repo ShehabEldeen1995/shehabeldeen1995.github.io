@@ -1,0 +1,201 @@
+@font-face {
+  font-family: Combi;
+  font-style: normal;
+  src: url("../Combi\ Sans\ W01\ Medium.ttf") format("opentype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Combi;
+}
+
+canvas {
+  display: block;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+.img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../2.png");
+  background-position: center;
+  /* background-size: 120%, cover; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../1.png");
+  background-position: center;
+  background-size:  cover;
+  /* background-size: 120%, cover; */
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-attachment: fixed;
+}
+
+.backgroud {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+.countDown {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.countDown .header .content h2 {
+  color: #c3bfdb;
+  font-size: 55px;
+  font-family: combi;
+  text-align: center;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  width: 15%;
+}
+.logo img {
+  width: 100%;
+}
+.social {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+  transform: translateX(-50%);
+}
+
+.social ul {
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.social ul li {
+  border: 1px solid #eedac9;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social ul li:hover {
+  border-color: #898cb4;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social ul li:hover i {
+  color: #898cb4;
+  -webkit-stroke-color: #898cb4;
+  -webkit-fill-color: #898cb4;
+  text-shadow: 1px 0px 20px #898cb4;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.social ul li a {
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  line-height: 60px;
+}
+
+.social ul li a i {
+  color: #ffead3;
+  font-size: 11px;
+  font-weight: 900;
+  position: absolute;
+  top: 64%;
+  left: 64%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-stroke-color: #ffead3;
+  -webkit-fill-color: #ffead3;
+  text-shadow: 1px 0px 20px #ffead3;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+/* RESPONSIVE */
+@media (min-width: 320px) and (max-width: 574px) {
+  .countDown .header .content h2 {
+    font-size: 20px;
+}
+
+  .logo img {
+    width: 200%;
+  }
+  .social {
+    left: 50%;
+    transform: translateX(-50%);
+}
+  .social ul li:not(:last-child) {
+    margin-bottom: .5rem;
+    margin-right: 10px;
+  }
+  .social ul li {
+    border: 1px solid #eedac9;
+    width: 25px;
+    height: 25px;
+  }
+  .social ul li a {
+    border-radius: 50%;
+    display: block;
+    position: unset;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    line-height: 60px;
+  }
+  .social ul li a i {
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+
