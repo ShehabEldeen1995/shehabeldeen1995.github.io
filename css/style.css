@@ -46,7 +46,7 @@ canvas {
   /* background-size: 120%, cover; */
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-attachment: fixed;
+/*   background-attachment: fixed; */
 }
 
 .backgroud {
